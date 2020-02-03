@@ -1,5 +1,4 @@
 import React from "react";
-import "./style/bootstrap.min.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Sidebar from "./Components/Sidebar";
 import routes from "./routes";
@@ -7,7 +6,9 @@ import { Container } from "react-bootstrap";
 import styled, { ThemeProvider } from "styled-components";
 const theme = {
 	colors: {
-		sidebar: "#F5F5F5"
+		sidebar: "#F5F5F5",
+		mainColor: "#717171",
+		warningColor: "#FFC107"
 	},
 	fonts: ["sans-serif", "Roboto"],
 	fontSizes: {
