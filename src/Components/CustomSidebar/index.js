@@ -20,8 +20,8 @@ const Side = styled.div`
 	width: 135px;
 	flex-direction: column;
 	align-items: center;
-	border-color: #333;
-	border-width: 2px;
+	border-color: ${(props) => props.theme.colors.borderColor};
+	border-width: 0 2px 0 0;
 	border-style: solid;
 	border-radius: 0px 4px 41px 16px/9px 21px 6px 0px;
 	justify-content: space-around;

@@ -14,7 +14,7 @@ export const Nav = styled.div`
 		fill: ${(props) => props.theme.colors.mainColor};
 	}
 `
-export default function Navbar({ setOpen, open }) {
+export default function Navbar({ setOpen, open, setThm, thm }) {
 	return (
 		<>
 			<Nav>
@@ -25,8 +25,9 @@ export default function Navbar({ setOpen, open }) {
 				>
 					<MenuIcon open={open} />
 				</Button>
-
-				<LampIcon />
+				<Button variant="link" onClick={() => setThm(!thm)}>
+					<LampIcon thm={thm} />
+				</Button>
 			</Nav>
 		</>
 	)

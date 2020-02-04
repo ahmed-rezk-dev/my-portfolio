@@ -1,9 +1,10 @@
 const theme = {
 	colors: {
-		AppContainer: "#ffffff",
-		sidebar: "#F5F5F5",
-		mainColor: "#717171",
-		borderColor: "#333",
+		AppContainer: "#161E24",
+		sidebar: "#1B2A35",
+		mainColor: "#fff",
+		borderColor: "#717171",
+		bodyColor: "#fff",
 		warningColor: "#FFC107"
 	},
 	fonts: ["sans-serif", "Roboto"],
