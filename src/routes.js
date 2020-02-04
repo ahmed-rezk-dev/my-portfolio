@@ -1,11 +1,12 @@
-import React from "react";
+import React from "react"
+import Home from "./Containers/home"
 
 const routes = [
 	{
 		path: "/",
 		exact: true,
 		sidebar: () => <div>home!</div>,
-		main: () => <h2>Home</h2>
+		main: () => <Home />
 	},
 	{
 		path: "/about",
@@ -27,6 +28,6 @@ const routes = [
 		sidebar: () => <div>contact!</div>,
 		main: () => <h2>Contact</h2>
 	}
-];
+]
 
-export default routes;
+export default routes
