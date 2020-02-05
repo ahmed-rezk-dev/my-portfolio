@@ -1,5 +1,5 @@
 import React from "react"
-import Home from "./Containers/home"
+import Home from "./Containers/Home"
 
 const routes = [
 	{

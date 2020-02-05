@@ -1,10 +1,28 @@
+const primary = "#333"
+const secondary = "#717171"
+const success = "#28a745"
+const info = "#17a2b8"
+const warning = "#ffc107"
+const danger = "#dc3545"
+const white = "#fff"
+const light = "#F5F5F5"
+const dark = "#555"
 const theme = {
 	colors: {
-		AppContainer: "#ffffff",
-		sidebar: "#F5F5F5",
-		mainColor: "#717171",
-		borderColor: "#333",
-		warningColor: "#FFC107"
+		primary,
+		success,
+		info,
+		warning,
+		danger,
+		light,
+		dark,
+		AppContainer: white,
+		sidebar: light,
+		mainColor: secondary,
+		borderColor: primary,
+		warningColor: warning,
+		secondary: dark,
+		bodyColor: secondary
 	},
 	fonts: ["sans-serif", "Roboto"],
 	fontSizes: {
