@@ -9,6 +9,7 @@ export const TextCode = styled.h5`
 export const TextCenter = styled.p`
 	font-size: 1.75rem;
 	margin: 0 0 0 1rem;
+	font-weight: 100;
 `
 function PageInfoSubText({ text }) {
 	return (

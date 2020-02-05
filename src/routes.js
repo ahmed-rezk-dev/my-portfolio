@@ -1,17 +1,18 @@
 import React from "react"
 import Home from "./Containers/Home"
+import About from "./Containers/About"
 
 const routes = [
 	{
 		path: "/",
 		exact: true,
 		sidebar: () => <div>home!</div>,
-		main: () => <Home />
+		main: (props) => <Home {...props} />
 	},
 	{
 		path: "/about",
 		sidebar: () => <div>About!</div>,
-		main: () => <h2>About</h2>
+		main: (props) => <About {...props} />
 	},
 	{
 		path: "/portfolio",

@@ -8,7 +8,7 @@ import { MenuIcon, LampIcon } from "../../assets/svg"
 export const Nav = styled.div`
 	display: flex;
 	min-height: 60px;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 	align-items: center;
 	justify-content: space-between;
 	svg {
@@ -53,7 +53,7 @@ function Navbar({ setOpen, open, setThm, thm }) {
 
 Navbar.propTypes = {
 	setOpen: PropTypes.func.isRequired,
-	open: PropTypes.bool.isRequired,
+	open: PropTypes.oneOf(["undefined", true, false]),
 	setThm: PropTypes.func.isRequired,
 	thm: PropTypes.bool.isRequired
 }

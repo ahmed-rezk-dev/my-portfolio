@@ -20,6 +20,7 @@
 		"no-console": "warn",
 		"no-eval": "error",
 		"import/first": "error",
-		"react/jsx-filename-extension": 0
+		"react/jsx-filename-extension": 0,
+		"react/jsx-props-no-spreading": 0
 	}
 }

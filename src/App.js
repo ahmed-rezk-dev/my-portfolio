@@ -89,7 +89,7 @@ function App() {
 										key={index}
 										path={route.path}
 										exact={route.exact}
-										children={<route.main />}
+										children={<route.main thm={thm} />}
 									/>
 								))}
 							</Switch>
