@@ -14,11 +14,12 @@ export const Nav = styled.div`
 	svg {
 		fill: ${(props) => props.theme.colors.mainColor};
 	}
+	background: #fff;
 `
 function Navbar({ setOpen, open, setThm, thm }) {
 	return (
 		<>
-			<Nav>
+			<Nav className="sticky-top">
 				<Spring
 					from={{ transform: "translate3d(0,-40px,0)" }}
 					to={{ transform: "translate3d(0,0px,0)" }}

@@ -4,6 +4,7 @@ import { Keyframes, animated } from "react-spring/renderprops"
 import { Container } from "react-bootstrap"
 import styled, { ThemeProvider, createGlobalStyle } from "styled-components"
 import { config } from "react-spring"
+import { Scrollbars } from "react-custom-scrollbars"
 import CustomSidebar from "./Components/CustomSidebar"
 import routes from "./routes"
 import theme from "./assets/theme"
@@ -12,7 +13,8 @@ import Navbar from "./Components/Navbar"
 
 const GlobalStyle = createGlobalStyle`
   body {
-    color: ${(props) => props.theme.colors.bodyColor};
+	color: ${(props) => props.theme.colors.bodyColor};
+	overflow: hidden;
   }
 `
 
@@ -81,19 +83,21 @@ function App() {
 								</animated.div>
 							)}
 						</Menu>
-						<Container fluid open={open}>
-							<Navbar setOpen={setOpen} open={open} setThm={setThm} thm={thm} />
-							<Switch>
-								{routes.map((route, index) => (
-									<Route
-										key={index}
-										path={route.path}
-										exact={route.exact}
-										children={<route.main thm={thm} />}
-									/>
-								))}
-							</Switch>
-						</Container>
+						<Scrollbars style={{ width: "100%", height: "auto" }}>
+							<Container fluid open={open}>
+								<Navbar setOpen={setOpen} open={open} setThm={setThm} thm={thm} />
+								<Switch>
+									{routes.map((route, index) => (
+										<Route
+											key={index}
+											path={route.path}
+											exact={route.exact}
+											children={<route.main thm={thm} />}
+										/>
+									))}
+								</Switch>
+							</Container>
+						</Scrollbars>
 					</Router>
 				</AppContainer>
 			</ThemeProvider>

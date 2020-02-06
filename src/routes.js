@@ -1,6 +1,7 @@
 import React from "react"
 import Home from "./Containers/Home"
 import About from "./Containers/About"
+import Skills from "./Containers/Skills"
 
 const routes = [
 	{
@@ -22,7 +23,7 @@ const routes = [
 	{
 		path: "/skills",
 		sidebar: () => <div>skills!</div>,
-		main: () => <h2>Skills</h2>
+		main: (props) => <Skills {...props} />
 	},
 	{
 		path: "/contact",
