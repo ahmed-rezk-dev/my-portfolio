@@ -2,6 +2,7 @@ import React from "react"
 import Home from "./Containers/Home"
 import About from "./Containers/About"
 import Skills from "./Containers/Skills"
+import Contact from "./Containers/Contact"
 
 const routes = [
 	{
@@ -28,7 +29,7 @@ const routes = [
 	{
 		path: "/contact",
 		sidebar: () => <div>contact!</div>,
-		main: () => <h2>Contact</h2>
+		main: (props) => <Contact {...props} />
 	}
 ]
 

@@ -21,7 +21,7 @@ const theme = {
 		mainColor: secondary,
 		borderColor: primary,
 		warningColor: warning,
-		secondary: dark,
+		secondary,
 		bodyColor: secondary
 	},
 	fonts: ["sans-serif", "Roboto"],
