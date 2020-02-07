@@ -21,6 +21,7 @@
 		"no-eval": "error",
 		"import/first": "error",
 		"react/jsx-filename-extension": 0,
-		"react/jsx-props-no-spreading": 0
+		"react/jsx-props-no-spreading": 0,
+		"max-classes-per-file": ["error", 5]
 	}
 }

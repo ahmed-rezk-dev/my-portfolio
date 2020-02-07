@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import { Keyframes, animated } from "react-spring/renderprops"
 import { Container } from "react-bootstrap"
@@ -66,17 +66,23 @@ const Menu = Keyframes.Spring({
 function App() {
 	const [open, setOpen] = useState(undefined)
 	const [thm, setThm] = useState(true)
+	const [stateType, setStateType] = useState("peek")
+	useEffect(() => {
+		if (open === undefined) {
+			setStateType("peek")
+		} else if (open) {
+			setStateType("in")
+		} else {
+			setStateType("out")
+		}
+	}, [open])
 	return (
 		<div className="App">
 			<ThemeProvider theme={thm ? theme : darkTheme}>
 				<GlobalStyle />
 				<AppContainer>
 					<Router>
-						<Menu
-							config={config.gentle}
-							unique
-							state={open === undefined ? "peek" : open ? "in" : "out"}
-						>
+						<Menu config={config.gentle} unique state={stateType}>
 							{(props) => (
 								<animated.div style={props} className="mainCustomContainer">
 									<CustomSidebar open={open} />
@@ -89,9 +95,10 @@ function App() {
 								<Switch>
 									{routes.map((route, index) => (
 										<Route
-											key={index}
+											key={index.toString()}
 											path={route.path}
 											exact={route.exact}
+											// eslint-disable-next-line react/no-children-prop
 											children={<route.main thm={thm} />}
 										/>
 									))}

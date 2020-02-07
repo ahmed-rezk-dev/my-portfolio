@@ -16,6 +16,7 @@ const theme = {
 		danger,
 		light,
 		dark,
+		white,
 		AppContainer: white,
 		sidebar: light,
 		mainColor: secondary,

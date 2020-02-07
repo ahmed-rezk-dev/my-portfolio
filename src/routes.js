@@ -3,6 +3,7 @@ import Home from "./Containers/Home"
 import About from "./Containers/About"
 import Skills from "./Containers/Skills"
 import Contact from "./Containers/Contact"
+import Portfolio from "./Containers/Portfolio"
 
 const routes = [
 	{
@@ -19,7 +20,7 @@ const routes = [
 	{
 		path: "/portfolio",
 		sidebar: () => <div>portfolio!</div>,
-		main: () => <h2>Portfolio</h2>
+		main: (props) => <Portfolio {...props} />
 	},
 	{
 		path: "/skills",
