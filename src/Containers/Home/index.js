@@ -52,7 +52,7 @@ function Home({ thm }) {
 					<Col
 						md={{ span: 4, offset: 2, order: 2 }}
 						xs={{ span: 8, offset: 2, order: 1 }}
-						className="mt-md-5 mt-sm-3"
+						className="mt-5"
 					>
 						<CustomSpring time={1100}>{pic()}</CustomSpring>
 					</Col>

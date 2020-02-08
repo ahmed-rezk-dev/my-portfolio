@@ -27,6 +27,9 @@ h6,
 .h6 {
 	font-size: 1rem;
 }
+p {
+	font-size: 1.75rem;
+}
 
 @media (max-width: 1200px) {
 	legend {
@@ -47,6 +50,9 @@ h6,
 	h4,
 	.h4 {
 		font-size: calc(1.275rem + 0.3vw);
+	}
+	p {
+		font-size: calc(1rem + 0.3vw);
 	}
 	.display-1 {
 		font-size: calc(1.725rem + 5.7vw);
