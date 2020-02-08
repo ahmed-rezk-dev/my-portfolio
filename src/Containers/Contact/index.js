@@ -35,7 +35,7 @@ function Contact() {
 			}
 		}
 		xhr.send(data)
-	})
+	}, [])
 
 	const statusMessage = useMemo(() => {
 		if (status === "SUCCESS") {

@@ -24,11 +24,10 @@ function Home({ thm }) {
 	return (
 		<>
 			<Container>
-				<Row className="align-items-center mt-5">
-					<Col md={6} className="mt-2">
-						<PageInfoText text={text} />
-
+				<Row className="align-items-center mt-md-5">
+					<Col md={6} xs={{ span: 12, order: 2 }} className="mt-2">
 						<Col md={12} className="mt-4">
+							<PageInfoText text={text} />
 							<PageInfoSubText text="This website is mad with React.js" />
 						</Col>
 
@@ -50,7 +49,11 @@ function Home({ thm }) {
 							</CustomSpring>
 						</div>
 					</Col>
-					<Col md={{ span: 4, offset: 2 }} className="mt-5">
+					<Col
+						md={{ span: 4, offset: 2, order: 2 }}
+						xs={{ span: 8, offset: 2, order: 1 }}
+						className="mt-md-5 mt-sm-3"
+					>
 						<CustomSpring time={1100}>{pic()}</CustomSpring>
 					</Col>
 				</Row>

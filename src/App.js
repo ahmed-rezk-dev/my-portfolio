@@ -63,8 +63,10 @@ const Menu = Keyframes.Spring({
 	}
 })
 
+const isMobile = window.innerWidth < 480
+
 function App() {
-	const [open, setOpen] = useState(undefined)
+	const [open, setOpen] = useState(isMobile ? false : undefined)
 	const [thm, setThm] = useState(true)
 	const [stateType, setStateType] = useState("peek")
 	useEffect(() => {

@@ -8,7 +8,6 @@ import CustomSpring from "../CustomSpring"
 export const Nav = styled.div`
 	display: flex;
 	min-height: 60px;
-	margin-bottom: 2rem;
 	align-items: center;
 	justify-content: space-between;
 	svg {
@@ -20,7 +19,7 @@ function Navbar({ setOpen, open, setThm, thm }) {
 	return (
 		<>
 			<CustomSpring time={1500}>
-				<Nav className="sticky-top">
+				<Nav className="sticky-top mb-md-5">
 					<Button
 						variant="link"
 						onClick={() => setOpen(open === undefined ? false : !open)}

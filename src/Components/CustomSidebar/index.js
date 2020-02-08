@@ -25,12 +25,18 @@ const Side = styled.div`
 	border-style: solid;
 	border-radius: 0px 4px 41px 16px/9px 21px 6px 0px;
 	justify-content: space-around;
+	@media (max-width: 854px) {
+		width: auto;
+	}
 `
 
 const Title = styled.h1`
 	margin-bottom: 2rem;
 	font-size: 3.5rem;
 	color: ${(props) => props.theme.colors.mainColor};
+	@media (max-width: 600px) {
+		font-size: 2.5rem;
+	}
 `
 const List = styled.ul`
 	list-style-type: none;
