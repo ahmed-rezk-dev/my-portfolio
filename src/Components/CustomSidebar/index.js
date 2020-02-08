@@ -99,7 +99,7 @@ const SocialMedia = styled.div`
 	}
 `
 
-const CustomSidebar = ({ open }) => {
+const CustomSidebar = () => {
 	return (
 		<Side>
 			<Title>{`<A/>`}</Title>

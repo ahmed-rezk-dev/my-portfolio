@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import CustomSpring from "../CustomSpring"
 
 export const TextContainer = styled.div``
 export const TextCode = styled.h2`
@@ -12,11 +13,13 @@ export const TextCenter = styled.h1`
 export default function PageInfoText({ text }) {
 	return (
 		<>
-			<TextContainer>
-				<TextCode>{"<h1>"}</TextCode>
-				<TextCenter>{text}</TextCenter>
-				<TextCode>{"</h1>"}</TextCode>
-			</TextContainer>
+			<CustomSpring time={500}>
+				<TextContainer>
+					<TextCode>{"<h1>"}</TextCode>
+					<TextCenter>{text}</TextCenter>
+					<TextCode>{"</h1>"}</TextCode>
+				</TextContainer>
+			</CustomSpring>
 		</>
 	)
 }

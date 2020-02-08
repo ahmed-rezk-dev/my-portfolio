@@ -1,6 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
-import { Spring, config } from "react-spring/renderprops"
+import { config } from "react-spring/renderprops"
 import data from "./data"
 import Grid from "./Grid"
 import PageInfoText from "../../Components/PageInfoText"
@@ -14,17 +14,9 @@ function App() {
 			<Container>
 				<Row className="align-items-center">
 					<Col>
-						<Spring
-							from={{ opacity: 0, rotation: "180deg", scale: 0.5 }}
-							to={{ opacity: 1, rotation: "0deg", scale: 1 }}
-							delay={500}
-						>
-							{(props) => (
-								<div style={props} className="mt-3">
-									<PageInfoText text={text} />
-								</div>
-							)}
-						</Spring>
+						<div className="mt-3">
+							<PageInfoText text={text} />
+						</div>
 					</Col>
 					<Grid
 						occupySpace

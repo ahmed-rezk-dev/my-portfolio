@@ -2,8 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { Button } from "react-bootstrap"
-import { Spring } from "react-spring/renderprops"
 import { MenuIcon, LampIcon } from "../../assets/svg"
+import CustomSpring from "../CustomSpring"
 
 export const Nav = styled.div`
 	display: flex;
@@ -19,35 +19,20 @@ export const Nav = styled.div`
 function Navbar({ setOpen, open, setThm, thm }) {
 	return (
 		<>
-			<Nav className="sticky-top">
-				<Spring
-					from={{ transform: "translate3d(0,-40px,0)" }}
-					to={{ transform: "translate3d(0,0px,0)" }}
-					delay={1500}
-				>
-					{(props) => (
-						<Button
-							style={props}
-							variant="link"
-							onClick={() => setOpen(open === undefined ? false : !open)}
-							aria-expanded={open}
-						>
-							<MenuIcon open={open} />
-						</Button>
-					)}
-				</Spring>
-				<Spring
-					from={{ transform: "translate3d(0,-40px,0)" }}
-					to={{ transform: "translate3d(0,0px,0)" }}
-					delay={1500}
-				>
-					{(props) => (
-						<Button style={props} variant="link" onClick={() => setThm(!thm)}>
-							<LampIcon thm={thm} />
-						</Button>
-					)}
-				</Spring>
-			</Nav>
+			<CustomSpring time={1500}>
+				<Nav className="sticky-top">
+					<Button
+						variant="link"
+						onClick={() => setOpen(open === undefined ? false : !open)}
+						aria-expanded={open}
+					>
+						<MenuIcon open={open} />
+					</Button>
+					<Button variant="link" onClick={() => setThm(!thm)}>
+						<LampIcon thm={thm} />
+					</Button>
+				</Nav>
+			</CustomSpring>
 		</>
 	)
 }
@@ -57,6 +42,10 @@ Navbar.propTypes = {
 	open: PropTypes.oneOf(["undefined", true, false]),
 	setThm: PropTypes.func.isRequired,
 	thm: PropTypes.bool.isRequired
+}
+
+Navbar.defaultProps = {
+	open: true
 }
 
 export default Navbar
