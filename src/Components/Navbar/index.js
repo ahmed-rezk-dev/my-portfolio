@@ -13,7 +13,7 @@ export const Nav = styled.div`
 	svg {
 		fill: ${(props) => props.theme.colors.mainColor};
 	}
-	background: #fff;
+	background: ${(props) => props.theme.colors.AppContainer};
 `
 function Navbar({ setOpen, open, setThm, thm }) {
 	return (

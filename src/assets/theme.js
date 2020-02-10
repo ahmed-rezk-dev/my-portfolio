@@ -23,7 +23,8 @@ const theme = {
 		borderColor: primary,
 		warningColor: warning,
 		secondary,
-		bodyColor: secondary
+		bodyColor: secondary,
+		anchor: secondary
 	},
 	fonts: ["sans-serif", "Roboto"],
 	fontSizes: {

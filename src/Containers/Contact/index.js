@@ -10,7 +10,7 @@ export const TextContainer = styled.div`
 	font-size: 1.5rem;
 	line-height: 3rem;
 	a {
-		color: ${(props) => props.theme.colors.secondary};
+		color: ${(props) => props.theme.colors.anchor};
 		text-decoration: none;
 	}
 `

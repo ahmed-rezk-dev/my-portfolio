@@ -16,6 +16,10 @@ const GlobalStyle = createGlobalStyle`
 	color: ${(props) => props.theme.colors.bodyColor};
 	overflow: hidden;
   }
+  .btn-outline-secondary {
+	color: ${(props) => props.theme.colors.btnColor};
+	border-color: ${(props) => props.theme.colors.btnColor}
+  }
 `
 
 export const AppContainer = styled.div`

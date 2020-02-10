@@ -29,6 +29,11 @@ const DetailsContainer = styled.div`
 		z-index: +111;
 		align-self: flex-end;
 		font-size: 26px;
+		svg {
+			path {
+				fill: ${(props) => props.theme.colors.mainColor};
+			}
+		}
 	}
 `
 const CircleImage = styled.img`
