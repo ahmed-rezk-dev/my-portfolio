@@ -60,6 +60,14 @@ const Menu = Keyframes.Spring({
 			width: "0px",
 			delay: 0
 		})
+	},
+	closed: async (next) => {
+		await next({
+			transform: "translateX(-110%)",
+			from: { transform: "translateX(-110%)" },
+			width: "0px",
+			delay: 0
+		})
 	}
 })
 

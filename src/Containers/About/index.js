@@ -25,15 +25,19 @@ function About({ thm }) {
 		<>
 			<Container>
 				<Row className="align-items-center">
-					<Col md={6} className="mt-5">
+					<Col
+						md={{ span: 6, order: 1 }}
+						xs={{ span: 12, order: 2 }}
+						className="mt-2 mt-sm-5"
+					>
 						<PageInfoText text={text} />
 
-						<div className="mt-5">
+						<div className=" mt-sm-5 mt-3">
 							<PageInfoSubText text={subText} />
 						</div>
 
 						<CustomSpring time={1100}>
-							<p className="d-flex justify-content-center mt-3">
+							<p className="d-flex justify-content-center mt-sm-3">
 								Love &nbsp;
 								<HeartIcon />
 								&nbsp; Coffee And tea &nbsp;
@@ -44,11 +48,12 @@ function About({ thm }) {
 
 					<Col
 						md={{ span: 4, offset: 2 }}
-						className="d-flex flex-column align-items-center mt-5"
+						xs={{ span: 8, offset: 2, order: 1 }}
+						className="d-flex flex-column align-items-center mt-2 mt-sm-5"
 					>
 						<CustomSpring time={900}>
 							{pic()}
-							<p className="d-flex justify-content-center text-center mt-3">
+							<p className="d-flex justify-content-center text-center mt-1 mt-sm-3">
 								* Name: Ahmed Rezk <br />
 								* Job: Full Stack Web Developer <br />* Living in: CO, US
 							</p>

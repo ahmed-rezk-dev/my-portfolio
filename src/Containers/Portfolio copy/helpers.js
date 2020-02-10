@@ -2,6 +2,8 @@ import React, { useState, useCallback, useLayoutEffect } from "react"
 
 import { Transition, Trail, animated } from "react-spring/renderprops"
 
+const getWidth = window.innerWidth - 50
+const isSM = window.innerWidth < 576
 export class Slug extends React.PureComponent {
 	render() {
 		const {
@@ -77,10 +79,9 @@ export class Fade extends React.PureComponent {
 
 function getDimensionObject(node) {
 	const rect = node.getBoundingClientRect()
-
 	return {
-		width: rect.width,
-		height: rect.height,
+		width: isSM ? getWidth : rect.width,
+		height: isSM ? 500 : rect.height,
 		top: "x" in rect ? rect.x : rect.top,
 		left: "y" in rect ? rect.y : rect.left,
 		x: "x" in rect ? rect.x : rect.left,

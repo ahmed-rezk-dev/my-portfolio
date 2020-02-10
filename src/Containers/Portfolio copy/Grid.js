@@ -3,6 +3,13 @@ import PropTypes from "prop-types"
 import { useTransition, animated, interpolate } from "react-spring"
 import { useDimensions } from "./helpers"
 
+const isSM = window.innerWidth < 576
+// const isMd = window.innerWidth < 769
+// const isLd = window.innerWidth < 1200
+
+// const openAni = isSM ? -120 : -230
+const SmHeight = window.innerHeight - 85
+
 const styles = {
 	outer: { position: "relative", width: "100%", height: "100%" },
 	inner: {
@@ -48,9 +55,9 @@ const Grid = ({
 		const result = {
 			opacity: state.open && !open ? 0 : 1,
 			x: open ? outerNode.scrollLeft : Math.round(x),
-			y: open ? -230 : Math.round(y),
+			y: open ? 0 : Math.round(y),
 			width: open ? innerDimensions.width : Math.round(width),
-			height: open ? outerDimensions.height : height
+			height: open ? (isSM ? SmHeight : outerDimensions.height) : height
 		}
 		return result
 	}

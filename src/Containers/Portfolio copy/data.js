@@ -2,8 +2,7 @@
 export default [
 	{
 		name: "Rare Wind",
-		logo:
-			"https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/3307391/original/392e6a477220db89299fd48715b3fff09a08f31c/do-flat-logo-logo.png",
+		logo: "http://acmelogos.com/images/logo-1.svg",
 		description:
 			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
 		images: [
@@ -51,8 +50,7 @@ export default [
 	},
 	{
 		name: "Perfect White",
-		logo:
-			"https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/3307391/original/392e6a477220db89299fd48715b3fff09a08f31c/do-flat-logo-logo.png",
+		logo: "http://acmelogos.com/images/logo-1.svg",
 		description:
 			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
 		images: [
@@ -88,8 +86,7 @@ export default [
 	},
 	{
 		name: "Ladoga Bottom",
-		logo:
-			"https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/3307391/original/392e6a477220db89299fd48715b3fff09a08f31c/do-flat-logo-logo.png",
+		logo: "http://acmelogos.com/images/logo-1.svg",
 		description:
 			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
 		images: [

@@ -29,7 +29,7 @@ const BoxContainerTitle = styled.div`
 	bottom: 1rem;
 	left: 0rem;
 	width: 100%;
-	background: ${(props) => props.theme.colors.white};
+	overflow: hidden;
 	text-align: center;
 	justify-content: center;
 	p {
@@ -68,7 +68,7 @@ const Details = styled.div`
 	overflow: scroll;
 	background: ${(props) => props.theme.colors.light}
 	color: white;
-	padding: 40px;
+	padding: 1rem;
 	font-weight: 100;
 	display: flex;
 	flex-direction: column;
@@ -107,10 +107,10 @@ export default function PortfolioCell({
 			<CustomCall className="card" onClick={!maximized ? toggle : undefined}>
 				<Fade show={maximized} delay={maximized ? 400 : 0}>
 					<Details>
+						<Button variant="link" onClick={toggle}>
+							<CloseIcon />
+						</Button>
 						<Slug delay={600}>
-							<Button variant="link" onClick={toggle}>
-								<CloseIcon />
-							</Button>
 							<Row className="mt-5">
 								<Col md={12} className="d-flex flex-column align-items-center">
 									<CircleImage src={logo} alt={name} />
