@@ -36,9 +36,13 @@ const DetailsContainer = styled.div`
 		}
 	}
 `
-const CircleImage = styled.img`
+const CircleImage = styled.div`
 	max-width: 15rem;
+	min-width: 15rem;
 	min-height: 15rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	border-radius: 50%;
 	box-shadow: 0px 20px 60px -10px rgba(0, 0, 0, 0.2);
 	padding: 1rem;
@@ -119,7 +123,9 @@ function App({ stateType, setStateType, detailsData }) {
 
 							<Row className="mt-5 pb-5">
 								<Col md={12} className="d-flex flex-column align-items-center">
-									<CircleImage src={logo} alt={name} />
+									<CircleImage>
+										<Image src={logo} alt={name} fluid />
+									</CircleImage>
 									<h2 className="mt-4">{name}</h2>
 								</Col>
 								<Col md={{ span: 8, offset: 2 }} className="d-flex">
