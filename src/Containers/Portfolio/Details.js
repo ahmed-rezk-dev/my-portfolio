@@ -4,7 +4,7 @@ import { Row, Col, Image, Button } from "react-bootstrap"
 import styled from "styled-components"
 import Scrollbars from "react-custom-scrollbars"
 import { Keyframes, config } from "react-spring/renderprops"
-import { CloseIcon } from "../../assets/svg"
+import { CloseIcon, VisitIcon } from "../../assets/svg"
 
 const DetailsContainer = styled.div`
 	position: fixed;
@@ -87,7 +87,7 @@ const Menu = Keyframes.Spring({
 })
 
 function App({ stateType, setStateType, detailsData }) {
-	const { name, logo, images, description, lang } = detailsData
+	const { name, logo, images, description, lang, url } = detailsData
 	const toggle = () => {
 		setStateType(!stateType)
 	}
@@ -127,6 +127,22 @@ function App({ stateType, setStateType, detailsData }) {
 								</Col>
 								<Col md={{ span: 8, offset: 2 }} className="d-flex">
 									<b className="text-info">{lang}</b>
+								</Col>
+								<Col
+									md={{ span: 8, offset: 2 }}
+									className="d-flex justify-content-center"
+								>
+									<Button
+										href={url}
+										target="_blank"
+										variant="outline-secondary"
+										className="m-2 d-flex align-self-center"
+									>
+										<span className="mr-1">
+											<VisitIcon />
+										</span>
+										Visit
+									</Button>
 								</Col>
 								<Col md={12} className="d-flex flex-column align-items-center">
 									{ImagesFun()}
