@@ -46,6 +46,7 @@ const CircleImage = styled.div`
 	border-radius: 50%;
 	box-shadow: 0px 20px 60px -10px rgba(0, 0, 0, 0.2);
 	padding: 1rem;
+	overflow: hidden;
 `
 
 const DescriptionContainer = styled.p`

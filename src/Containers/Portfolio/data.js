@@ -1,174 +1,96 @@
 // Gradients taken from: https://webgradients.com/
 export default [
 	{
-		name: "Rare Wind",
-		logo:
-			"https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/3307391/original/392e6a477220db89299fd48715b3fff09a08f31c/do-flat-logo-logo.png",
+		name: "Full-Stack Dashboard",
+		logo: "https://i.imgur.com/0gUMm38.png",
 		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
+			"This is a a side project Full-Stack Dashboard not done yet, nodeJs with reactJs creating Dashboard.",
+		lang:
+			"Developed Front-End - Back-End Using - Api : Front-End: HTML/CSS Javascript ReactJs - react-redux - redux-saga - react-router - material-ui - react-spring - immer - material-table - yup.. Back-end: NodeJs - ExpressJs - mongoose Axios - passport - validator - lodash - googleapis.",
 		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
+			"https://i.imgur.com/bbgpA70.jpg",
+			"https://i.imgur.com/PdcbLf9.jpg",
+			"https://i.imgur.com/VxwqbOI.jpg"
 		],
-		height: 200
+		url: "https://dashboard-reactjs.herokuapp.com/auth/login"
 	},
 	{
-		name: "Saint Petersburg",
-		logo: "http://acmelogos.com/images/logo-1.svg",
+		name: "AEASEEL",
+		logo: "https://i.imgur.com/8K1TmNp.png",
 		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
+			"The company is specialized in the field of engineering consultancy (design and supervision of architectural and construction and interior design) and includes engineering cadres with a high degree of competence and proficiency in order to provide the best professional consultancy services in the field of construction.",
+		lang:
+			"Developed Front-End - Back-End Using: Php - Wordpress - wordpress api - theme options wordpress - Javascript - bootstrap - Jquery - Mysql database",
 		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
+			"https://i.imgur.com/W0vNjYa.jpg",
+			"https://i.imgur.com/iHhvIpd.png",
+			"https://i.imgur.com/0Z3LGkQ.png"
 		],
-		height: 400
+		url: "https://web.archive.org/web/20181226202912/http://trc-saudi.com/#/wishlist"
 	},
 	{
-		name: "Deep Blue",
-		logo: "http://acmelogos.com/images/logo-1.svg",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
+		name: "Roook",
+		logo: "https://i.imgur.com/88KnGc3.png",
+		description: "",
+		lang: "",
 		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
+			"https://i.imgur.com/mbLlnOJ.png",
+			"https://i.imgur.com/p0TzwqK.png",
+			"https://i.imgur.com/kmILYIi.png",
+			"https://i.imgur.com/1T8DXNL.png",
+			"https://i.imgur.com/0wsPh7O.png",
+			"https://i.imgur.com/0N7i7eX.png"
 		],
-		height: 400
+		url: "http://www.roook.net/sa/"
 	},
 	{
-		name: "Ripe Malinka",
-		logo: "http://acmelogos.com/images/logo-1.svg",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
-		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
-		],
-		height: 400
+		name: "SMH",
+		logo: "https://i.imgur.com/XYBXRSr.png",
+		description: "Information Center Installment",
+		lang:
+			"Developed Front-End - Back-End Using: Php - Wordpress - wordpress api - theme options wordpress - Javascript - bootstrap - Jquery - Mysql database",
+		images: ["https://i.imgur.com/r2xbclq.png", "https://i.imgur.com/GtzKVRH.png"],
+		url: "https://web.archive.org/web/20190821194000/http://smh.sa.com/"
 	},
 	{
-		name: "Perfect White",
-		logo:
-			"https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/3307391/original/392e6a477220db89299fd48715b3fff09a08f31c/do-flat-logo-logo.png",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
-		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
-		],
-		height: 400
+		name: "Spcs",
+		logo: "https://i.imgur.com/3LktnzY.png",
+		description: "",
+		lang: "",
+		images: ["https://i.imgur.com/0rBZYp2.png", "https://i.imgur.com/U9xQTf6.png"],
+		url: "https://web.archive.org/web/20181101090807/http://spcs.sa/"
 	},
 	{
-		name: "Near Moon",
-		logo: "http://acmelogos.com/images/logo-1.svg",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
-		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
-		],
-		height: 400
+		name: "Asma",
+		logo: "https://i.imgur.com/CWnojeR.png",
+		description: "",
+		lang: "",
+		images: ["https://i.imgur.com/bBICSNG.png", "https://i.imgur.com/AOBNf88.png"],
+		url: "#"
 	},
 	{
-		name: "Wild Apple",
-		logo: "http://acmelogos.com/images/logo-1.svg",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
+		name: "I am Fine",
+		logo: "https://i.imgur.com/KfvDyXP.png",
+		description: "Android app",
+		lang:
+			"Developed Web services API - Back-End Using: Node.js - Adonis.js framework - JavaScript -- bootstrap - jQuery - MySQL database - Sokect io - Realtime chat - Web services Api - Fcm notification - Momentjs - Lodash.js - Jwt API authentication - Git",
 		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
+			"https://i.imgur.com/079Vkuu.png",
+			"https://i.imgur.com/2azPDh2.png",
+			"https://i.imgur.com/cs6L3ZT.png",
+			"https://i.imgur.com/fpv3hIY.png",
+			"https://i.imgur.com/2jRJrfJ.png"
 		],
-		height: 200
+		url: "#"
 	},
 	{
-		name: "Ladoga Bottom",
-		logo:
-			"https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/3307391/original/392e6a477220db89299fd48715b3fff09a08f31c/do-flat-logo-logo.png",
+		name: "TRC inc",
+		logo: "https://i.imgur.com/Xhmzt4M.png",
 		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
-		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
-		],
-		height: 400
-	},
-	{
-		name: "Sunny Morning",
-		logo: "http://acmelogos.com/images/logo-1.svg",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
-		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
-		],
-		height: 200
-	},
-	{
-		name: "Lemon Gate",
-		logo: "http://acmelogos.com/images/logo-1.svg",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
-		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
-		],
-		height: 400
-	},
-	{
-		name: "Salt Mountain",
-		logo: "http://acmelogos.com/images/logo-1.svg",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
-		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
-		],
-		height: 200
-	},
-	{
-		name: "New York",
-		logo: "http://acmelogos.com/images/logo-1.svg",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
-		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
-		],
-		height: 400
-	},
-	{
-		name: "Soft Grass",
-		logo: "http://acmelogos.com/images/logo-1.svg",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
-		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
-		],
-		height: 400
-	},
-	{
-		name: "Japan Blush",
-		logo: "http://acmelogos.com/images/logo-1.svg",
-		description:
-			"Canvas is a Powerful, Responsive & Raw Multi-Purpose Multi-Page & One-Page HTML5 Template. Build whatever you like with this Template. Be it Business, Corporate, Medical, SEO, Travel, Construction, Real Estate, Media Agency, CoWorking, Recipes, Articles, Packers & Movers, Photography, News, Non-Profit, Conference, Courses, Rentals, Hosting, Gym, Music, Barber, CV/Resume, Cafe, Spa, Pets, Portfolio, Agency, Magazine, Parallax, Wedding, Christmas, Restaurant, Blog or App Showcase, just everything is possible with Canvas. We have included 100+ ready-to-use Homepages & 900+ HTML Templates within the Package, it is this huge. Amazing flexibility, Dark Scheme, Super Shortcodes, Raw Bootstrap & Scalable Responsive Features makes Canvas standout from the crowd. Try out the demo.",
-		images: [
-			"https://i.pinimg.com/564x/8e/9e/35/8e9e358f10422dce3d0b5f2a89cbe124.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/a4e44891559059.5e349e6edb332.jpg",
-			"https://mir-s3-cdn-cf.behance.net/project_modules/fs/b836e091274243.5e2de1ae18743.png"
-		],
-		height: 200
+			"A Saudi company, which pioneers manufacturing of non-woven fabrics, based on the provision of service to its community and environment.",
+		lang:
+			"Developed Front-End - Back-End Using: HTML/CSS - PHP/Laravel framework - Javascript - Angular - bootstrap - Jquery - Ajax - Mysql database",
+		images: ["https://i.imgur.com/L5oImVm.jpg"],
+		url: "https://web.archive.org/web/20181226202912/http://trc-saudi.com/#/wishlist"
 	}
 ]
