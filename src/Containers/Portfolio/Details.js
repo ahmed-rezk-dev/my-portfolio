@@ -82,7 +82,7 @@ const Menu = Keyframes.Spring({
 })
 
 function App({ stateType, setStateType, detailsData }) {
-	const { name, logo, images, description } = detailsData
+	const { name, logo, images, description, lang } = detailsData
 	const toggle = () => {
 		setStateType(!stateType)
 	}
@@ -117,6 +117,9 @@ function App({ stateType, setStateType, detailsData }) {
 								</Col>
 								<Col md={{ span: 8, offset: 2 }} className="d-flex">
 									<DescriptionContainer>{description}</DescriptionContainer>
+								</Col>
+								<Col md={{ span: 8, offset: 2 }} className="d-flex">
+									<b className="text-info">{lang}</b>
 								</Col>
 								<Col md={12} className="d-flex flex-column align-items-center">
 									{ImagesFun()}
