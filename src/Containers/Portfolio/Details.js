@@ -55,6 +55,11 @@ const ImageContainer = styled.div`
 		width: 100%;
 		max-width: 500px;
 	}
+	a {
+		&:hover {
+			cursor: zoom-in;
+		}
+	}
 `
 
 const Menu = Keyframes.Spring({
@@ -91,7 +96,9 @@ function App({ stateType, setStateType, detailsData }) {
 		if (images) {
 			return images.map((i, k) => (
 				<ImageContainer key={k.toString()}>
-					<Image src={i} thumbnail />
+					<a href={i} target="_blank" rel="noopener noreferrer">
+						<Image src={i} thumbnail />
+					</a>
 				</ImageContainer>
 			))
 		}

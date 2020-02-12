@@ -28,7 +28,7 @@ function App() {
 				<Col md={3} onClick={() => toggle(i)} key={k.toString()} className="mb-5">
 					<Card
 						className="d-flex align-items-center justify-content-center"
-						style={{ minHeight: "190px" }}
+						style={{ minHeight: "190px", cursor: "pointer" }}
 					>
 						<Image thumbnail src={i.logo} />
 					</Card>
