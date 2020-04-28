@@ -12,7 +12,22 @@ export default [
 			"https://i.imgur.com/PdcbLf9.jpg",
 			"https://i.imgur.com/VxwqbOI.jpg"
 		],
-		url: "https://dashboard-reactjs.herokuapp.com/auth/login"
+		url: "https://dashjs.herokuapp.com/"
+	},
+
+	{
+		name: "PHP Dashboard",
+		logo: "https://i.imgur.com/8TGnCMi.jpg",
+		description: "This Full-Stack Dashboard, PHP Laravel version 7.",
+		lang:
+			"Front-End: HTML/CSS - Bootsrap - Javascript - passport - validator - lodash - googleapis.",
+		images: [
+			"https://i.imgur.com/OpJgMwZ.jpg",
+			"https://i.imgur.com/UW78amd.jpg",
+            "https://i.imgur.com/TEt5DF4.jpg",
+            "https://i.imgur.com/fjOK9ts.jpg"
+		],
+		url: "https://dashphp.herokuapp.com/login"
 	},
 	{
 		name: "AEASEEL",

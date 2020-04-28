@@ -28,7 +28,7 @@ function Home({ thm }) {
 					<Col md={6} xs={{ span: 12, order: 2 }} className="mt-2">
 						<Col md={12} className="mt-4">
 							<PageInfoText text={text} />
-							<PageInfoSubText text="This website is mad with React.js" />
+							<PageInfoSubText text="This website is made with React.js" />
 						</Col>
 
 						<div className="mt-2 justify-content-center d-flex">
