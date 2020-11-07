@@ -8,7 +8,8 @@ import PageInfoSubText from "../../Components/PageInfoSubText"
 import { HeartIcon, CoffeeIcon } from "../../assets/svg"
 import CustomSpring from "../../Components/CustomSpring"
 
-const resume = "https://www.dropbox.com/s/33b4490n1s5ld8h/Ahmed%20Rezk.docx?dl=1"
+const resume =
+	"https://www.icloud.com/iclouddrive/0RJxJMJACLfJ7wD9J7DdWY1tA#Ahmed_Rezk"
 const text = <span>About Me</span>
 const subText =
 	"An enthusiastic and proactive web developer who makes easy-to-use websites and applications by discovering how users think. Seeking an IT position where I can utilize six years of experience of Back-End/Front-End and in developing websites and web applications."
@@ -60,7 +61,12 @@ function About({ thm }) {
 						</CustomSpring>
 
 						<CustomSpring time={1300}>
-							<Button variant="outline-secondary" href={resume} download>
+							<Button
+								variant="outline-secondary"
+								href={resume}
+								target="_blank"
+								download
+							>
 								Download Resume
 							</Button>
 						</CustomSpring>
