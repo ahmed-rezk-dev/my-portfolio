@@ -1,0 +1,44 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "plugins": [
+    "react",
+    "import",
+    "prettier"
+  ],
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "warn",
+    "no-eval": "error",
+    "import/first": "error",
+    "react/jsx-filename-extension": 0,
+    "react/jsx-props-no-spreading": 0,
+    "max-classes-per-file": [
+      "error",
+      5
+    ],
+    "no-nested-ternary": 0,
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false,
+        "classes": true,
+        "variables": true,
+        "allowNamedExports": false
+      }
+    ]
+  }
+}

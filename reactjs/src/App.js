@@ -40,29 +40,29 @@ const Menu = Keyframes.Spring({
 			transform: "translateX(0%)",
 			from: { transform: "translateX(-100%)" },
 			delay: 0,
-			width: "160px"
-		}
+			width: "160px",
+		},
 	],
 	in: async (next) => {
 		await next({
 			width: "160px",
-			delay: 0
+			delay: 0,
 		})
 		await next({
 			transform: "translateX(0%)",
 			from: { transform: "translateX(-100%)" },
-			delay: 0
+			delay: 0,
 		})
 	},
 	out: async (next) => {
 		await next({
 			transform: "translateX(-100%)",
 			from: { transform: "translateX(0%)" },
-			delay: 0
+			delay: 0,
 		})
 		await next({
 			width: "0px",
-			delay: 0
+			delay: 0,
 		})
 	},
 	closed: async (next) => {
@@ -70,9 +70,9 @@ const Menu = Keyframes.Spring({
 			transform: "translateX(-110%)",
 			from: { transform: "translateX(-110%)" },
 			width: "0px",
-			delay: 0
+			delay: 0,
 		})
-	}
+	},
 })
 
 const isMobile = window.innerWidth < 480
