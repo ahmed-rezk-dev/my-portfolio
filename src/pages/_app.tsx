@@ -1,3 +1,4 @@
+import { AppContainer } from "@/Components/app-container"
 import GlobalStyle from "@/Components/GlobalStyle"
 import darkTheme from "@/public/darkTheme"
 import theme from "@/public/theme"
@@ -11,9 +12,11 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<ThemeProvider theme={thm ? theme : darkTheme}>
 			<GlobalStyle />
-			<Container fluid>
-				<Component {...pageProps} />
-			</Container>
+			<AppContainer>
+				<Container fluid>
+					<Component {...pageProps} />
+				</Container>
+			</AppContainer>
 		</ThemeProvider>
 	)
 }
