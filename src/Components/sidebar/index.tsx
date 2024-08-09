@@ -5,6 +5,7 @@ import { OverlayTrigger, Tooltip } from "react-bootstrap"
 import { HomeIcon, LinkedinIcon, GithubIcon } from "@/public/svg"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { animated, useSpring } from "@react-spring/web"
 
 const Side = styled.div`
 	display: flex;
@@ -98,52 +99,61 @@ const SocialMedia = styled.div`
 	}
 `
 
-export default function Sidebar() {
+export default function Sidebar({ isSidebarOpen }: { isSidebarOpen: boolean }) {
 	const pathname = usePathname()
+
+	const sidebarAnimtion = useSpring({
+		width: "160px",
+		transform: isSidebarOpen ? "translateX(0%)" : "translateX(-100%)",
+		delay: 0,
+	})
+
 	return (
-		<Side>
-			<Title>{`<A/>`}</Title>
-			<List>
-				<li>
+		<animated.div style={sidebarAnimtion}>
+			<Side>
+				<Title>{`<A/>`}</Title>
+				<List>
+					<li>
+						<OverlayTrigger
+							placement="right"
+							overlay={<Tooltip id="tooltip-disabled">Home</Tooltip>}
+						>
+							<Link
+								className={`link ${pathname === "/" ? "selectedLink" : ""}`}
+								href="/"
+							>
+								<HomeIcon />
+							</Link>
+						</OverlayTrigger>
+					</li>
+				</List>
+				<SocialMedia>
 					<OverlayTrigger
 						placement="right"
-						overlay={<Tooltip id="tooltip-disabled">Home</Tooltip>}
+						overlay={<Tooltip id="tooltip-disabled">Linkedin</Tooltip>}
 					>
-						<Link
-							className={`link ${pathname === "/" ? "selectedLink" : ""}`}
-							href="/"
+						<a
+							href="https://www.linkedin.com/in/ahmed-rezk-dev/"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
-							<HomeIcon />
-						</Link>
+							<LinkedinIcon />
+						</a>
 					</OverlayTrigger>
-				</li>
-			</List>
-			<SocialMedia>
-				<OverlayTrigger
-					placement="right"
-					overlay={<Tooltip id="tooltip-disabled">Linkedin</Tooltip>}
-				>
-					<a
-						href="https://www.linkedin.com/in/ahmed-rezk-dev/"
-						target="_blank"
-						rel="noopener noreferrer"
+					<OverlayTrigger
+						placement="right"
+						overlay={<Tooltip id="tooltip-disabled">Github</Tooltip>}
 					>
-						<LinkedinIcon />
-					</a>
-				</OverlayTrigger>
-				<OverlayTrigger
-					placement="right"
-					overlay={<Tooltip id="tooltip-disabled">Github</Tooltip>}
-				>
-					<a
-						href="https://github.com/ahmed-rezk-dev"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<GithubIcon />
-					</a>
-				</OverlayTrigger>
-			</SocialMedia>
-		</Side>
+						<a
+							href="https://github.com/ahmed-rezk-dev"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<GithubIcon />
+						</a>
+					</OverlayTrigger>
+				</SocialMedia>
+			</Side>
+		</animated.div>
 	)
 }
