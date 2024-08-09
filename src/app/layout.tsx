@@ -10,6 +10,7 @@ import { useState } from "react"
 import theme from "@/public/theme"
 import darkTheme from "@/public/darkTheme"
 import SidebarButton from "@/Components/sidebar-button"
+import useEvent from "react-use-event-hook"
 
 export default function RootLayout({
 	children,
@@ -20,9 +21,9 @@ export default function RootLayout({
 
 	const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(true)
 
-	const toggleSidebarHandler = () => {
+	const toggleSidebarHandler = useEvent(() => {
 		setIsSidebarOpen(!isSidebarOpen)
-	}
+	})
 
 	// TODO: Them up the theme toggle
 	const toggleThemeHandler = () => {
