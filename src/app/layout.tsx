@@ -9,7 +9,7 @@ import Sidebar from "@/Components/sidebar"
 import { useState } from "react"
 import theme from "@/public/theme"
 import darkTheme from "@/public/darkTheme"
-import SidebarButton from "@/Components/sidebar-button"
+import Navbar from "@/Components/sidebar-button"
 import useEvent from "react-use-event-hook"
 
 export default function RootLayout({
@@ -37,7 +37,7 @@ export default function RootLayout({
 					<GlobalStyle />
 					<AppContainer>
 						<Sidebar isSidebarOpen={isSidebarOpen} />
-						<SidebarButton
+						<Navbar
 							isSidebarOpen={isSidebarOpen}
 							toggleSidebar={toggleSidebarHandler}
 							isLightTheme={isLightTheme}

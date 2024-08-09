@@ -2,9 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { Button } from "react-bootstrap"
 import { SidebarIcon } from "@/public/svg"
-import SidebarButtonAnimation from "../sidebar-button-animation"
+import NavbarAnimation from "../sidebar-button-animation"
 
-export const Nav = styled.div`
+export const NavbarWrappr = styled.div`
 	display: flex;
 	min-height: 60px;
 	align-items: center;
@@ -15,30 +15,34 @@ export const Nav = styled.div`
 	background: ${(props) => props.theme.colors.AppContainer};
 `
 
-type SidebarButtonType = {
+type NavbarType = {
 	isSidebarOpen: boolean
 	toggleSidebar: () => void
 	isLightTheme: boolean
 	toggleTheme: () => void
 }
 
-function SidebarButton({
+function Navbar({
 	isSidebarOpen,
 	toggleSidebar,
 	isLightTheme,
 	toggleTheme,
-}: SidebarButtonType) {
+}: NavbarType) {
 	return (
 		<>
-			<SidebarButtonAnimation time={1500}>
-				<Nav className="sticky-top mb-md-5">
-				<Button variant="link" onClick={toggleSidebar} aria-expanded={isSidebarOpen}>
-					<SidebarIcon open={isSidebarOpen} />
-				</Button>
-				</Nav>
-			</SidebarButtonAnimation>
+			<NavbarAnimation time={1500}>
+				<NavbarWrappr className="sticky-top mb-md-5">
+					<Button
+						variant="link"
+						onClick={toggleSidebar}
+						aria-expanded={isSidebarOpen}
+					>
+						<SidebarIcon open={isSidebarOpen} />
+					</Button>
+				</NavbarWrappr>
+			</NavbarAnimation>
 		</>
 	)
 }
 
-export default SidebarButton
+export default Navbar
