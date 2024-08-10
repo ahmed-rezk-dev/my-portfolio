@@ -26,14 +26,15 @@ const darkTheme = {
 		btnColor: white,
 		bodyColor: white,
 		warningColor: warning,
-		anchor: white
+		anchor: white,
 	},
 	fonts: ["sans-serif", "Roboto"],
 	fontSizes: {
 		small: "1em",
 		medium: "2em",
-		large: "3em"
-	}
+		large: "3em",
+	},
+	isLight: false,
 }
 
 export default darkTheme

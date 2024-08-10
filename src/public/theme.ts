@@ -24,14 +24,15 @@ const theme = {
 		warningColor: warning,
 		secondary,
 		bodyColor: secondary,
-		anchor: secondary
+		anchor: secondary,
 	},
 	fonts: ["sans-serif", "Roboto"],
 	fontSizes: {
 		small: "1em",
 		medium: "2em",
-		large: "3em"
-	}
+		large: "3em",
+	},
+	isLight: true,
 }
 
 export default theme
