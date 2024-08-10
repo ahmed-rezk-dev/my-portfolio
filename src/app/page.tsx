@@ -1,9 +1,19 @@
 "use client"
-import { Col, Container, Row } from "react-bootstrap"
+import { Col, Container, Row, Image } from "react-bootstrap"
+import { useContext } from "react"
+import { ThemeContext } from "styled-components"
 import HomePageText from "./components/home-page-text"
 import HomePageSubText from "./components/home-page-sub-text"
 
 export default function Page() {
+	const themeContext = useContext(ThemeContext)
+	const isLightTheme = themeContext?.isLight
+
+	const pic = isLightTheme ? (
+		<Image src="/light_pic.jpeg" thumbnail alt="Ahmed Rezk" />
+	) : (
+		<Image src="/dark_pic.jpeg" thumbnail alt="Ahmed Rezk" />
+	)
 
 	return (
 		<>
@@ -14,7 +24,14 @@ export default function Page() {
 							<HomePageText />
 							<HomePageSubText />
 						</Col>
+					</Col>
 
+					<Col
+						md={{ span: 4, offset: 2, order: 2 }}
+						xs={{ span: 8, offset: 2, order: 1 }}
+						className="mt-5"
+					>
+						{pic}
 					</Col>
 				</Row>
 			</Container>
