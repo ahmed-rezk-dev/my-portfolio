@@ -1,5 +1,6 @@
 "use client"
-import { Col, Container, Row, Image } from "react-bootstrap"
+import { Col, Container, Row, Image, Button } from "react-bootstrap"
+import Link from "next/link"
 import { useContext } from "react"
 import { ThemeContext } from "styled-components"
 import HomePageText from "./components/home-page-text"
@@ -24,6 +25,20 @@ export default function Page() {
 							<HomePageText />
 							<HomePageSubText />
 						</Col>
+
+						<div className="mt-5 justify-content-center d-flex">
+							<Link href="/contact">
+								<Button variant="outline-secondary" className="m-2" size="lg">
+									Contact
+								</Button>
+							</Link>
+
+							<Link href="/about">
+								<Button variant="outline-secondary" className="m-2" size="lg">
+									Resume
+								</Button>
+							</Link>
+						</div>
 					</Col>
 
 					<Col
