@@ -3,8 +3,14 @@ import { Col, Container, Row, Image, Button } from "react-bootstrap"
 import Link from "next/link"
 import { useContext } from "react"
 import { ThemeContext } from "styled-components"
-import HomePageText from "./components/home-page-text"
-import HomePageSubText from "./components/home-page-sub-text"
+import DevSubInfo from "./components/dev-sub-info"
+import DevInfo from "./components/dev-info"
+
+const devInfoText = (
+	<span>
+		Hi, <br /> I&apos;m Ahmed, <br /> Web Developer
+	</span>
+)
 
 export default function Page() {
 	const themeContext = useContext(ThemeContext)
@@ -22,8 +28,9 @@ export default function Page() {
 				<Row className="align-items-center mt-md-5">
 					<Col md={6} xs={{ span: 12, order: 2 }} className="mt-2">
 						<Col md={12} className="mt-4">
-							<HomePageText />
-							<HomePageSubText />
+
+							<DevInfo element={devInfoText} />
+							<DevSubInfo element="This website is made with React.js" />
 						</Col>
 
 						<div className="mt-5 justify-content-center d-flex">
