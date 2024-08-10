@@ -1,6 +1,5 @@
 "use client"
-import "../public/bootstrap.min.css"
-import "../public/font.css"
+import "./globals.css"
 import { ThemeProvider } from "styled-components"
 import GlobalStyle from "@/Components/GlobalStyle"
 import { AppContainer } from "@/Components/app-container"
@@ -9,8 +8,8 @@ import Sidebar from "@/Components/sidebar"
 import { useState } from "react"
 import theme from "@/public/theme"
 import darkTheme from "@/public/darkTheme"
-import Navbar from "@/Components/sidebar-button"
 import useEvent from "react-use-event-hook"
+import Navbar from "@/Components/navbar"
 
 export default function RootLayout({
 	children,
@@ -25,9 +24,8 @@ export default function RootLayout({
 		setIsSidebarOpen(!isSidebarOpen)
 	})
 
-	// TODO: Them up the theme toggle
 	const toggleThemeHandler = () => {
-		setIsSidebarOpen(!isSidebarOpen)
+		setIsLightTheme(!isLightTheme)
 	}
 
 	return (
@@ -37,13 +35,15 @@ export default function RootLayout({
 					<GlobalStyle />
 					<AppContainer>
 						<Sidebar isSidebarOpen={isSidebarOpen} />
-						<Navbar
-							isSidebarOpen={isSidebarOpen}
-							toggleSidebar={toggleSidebarHandler}
-							isLightTheme={isLightTheme}
-							toggleTheme={toggleSidebarHandler}
-						/>
-						<Container fluid>{children}</Container>
+						<Container fluid>
+							<Navbar
+								isSidebarOpen={isSidebarOpen}
+								toggleSidebar={toggleSidebarHandler}
+								isLightTheme={isLightTheme}
+								toggleTheme={toggleThemeHandler}
+							/>
+							{children}
+						</Container>
 					</AppContainer>
 				</ThemeProvider>
 			</body>
