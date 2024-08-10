@@ -1,8 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 import { Button } from "react-bootstrap"
-import { SidebarIcon } from "@/public/svg"
-import NavbarAnimation from "../sidebar-button-animation"
+import { LampIcon, SidebarIcon } from "@/public/svg"
+import { motion, Variants } from "framer-motion"
 
 export const NavbarWrappr = styled.div`
 	display: flex;
@@ -22,6 +22,18 @@ type NavbarType = {
 	toggleTheme: () => void
 }
 
+const navbarAnimation: Variants = {
+	hidden: {
+		opacity: 0,
+	},
+	visible: {
+		opacity: 1,
+		transition: {
+			delay: 0.4,
+		},
+	},
+}
+
 function Navbar({
 	isSidebarOpen,
 	toggleSidebar,
@@ -30,8 +42,9 @@ function Navbar({
 }: NavbarType) {
 	return (
 		<>
-			<NavbarAnimation time={1500}>
+			<motion.div initial="hidden" animate="visible" variants={navbarAnimation}>
 				<NavbarWrappr className="sticky-top mb-md-5">
+					{/* Sidebar toggle Button */}
 					<Button
 						variant="link"
 						onClick={toggleSidebar}
@@ -39,8 +52,13 @@ function Navbar({
 					>
 						<SidebarIcon open={isSidebarOpen} />
 					</Button>
+
+					{/* Theme toggle Button */}
+					<Button variant="link" onClick={toggleTheme}>
+						<LampIcon isLightTheme={isLightTheme} />
+					</Button>
 				</NavbarWrappr>
-			</NavbarAnimation>
+			</motion.div>
 		</>
 	)
 }

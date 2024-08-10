@@ -5,7 +5,7 @@ import { OverlayTrigger, Tooltip } from "react-bootstrap"
 import { HomeIcon, LinkedinIcon, GithubIcon } from "@/public/svg"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { animated, useSpring } from "@react-spring/web"
+import { motion } from "framer-motion"
 
 const Side = styled.div`
 	display: flex;
@@ -102,14 +102,23 @@ const SocialMedia = styled.div`
 export default function Sidebar({ isSidebarOpen }: { isSidebarOpen: boolean }) {
 	const pathname = usePathname()
 
-	const sidebarAnimtion = useSpring({
-		width: "160px",
-		transform: isSidebarOpen ? "translateX(0%)" : "translateX(-100%)",
-		delay: 0,
-	})
+	const sidebarAnimtion = {
+		open: {
+			width: "160px",
+			transform: "translateX(0%)",
+		},
+		close: {
+			width: "160px",
+			transform: "translateX(-100%)",
+		},
+	}
 
 	return (
-		<animated.div style={sidebarAnimtion}>
+		<motion.div
+      initial="close"
+			animate={isSidebarOpen ? "open" : "close"}
+			variants={sidebarAnimtion}
+		>
 			<Side>
 				<Title>{`<A/>`}</Title>
 				<List>
@@ -154,6 +163,6 @@ export default function Sidebar({ isSidebarOpen }: { isSidebarOpen: boolean }) {
 					</OverlayTrigger>
 				</SocialMedia>
 			</Side>
-		</animated.div>
+		</motion.div>
 	)
 }
