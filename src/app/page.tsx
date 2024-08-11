@@ -7,9 +7,9 @@ import DevSubInfo from "./components/dev-sub-info"
 import DevInfo from "./components/dev-info"
 
 const devInfoText = (
-	<span>
+	<h1>
 		Hi, <br /> I&apos;m Ahmed, <br /> Web Developer
-	</span>
+	</h1>
 )
 
 export default function Page() {
@@ -28,9 +28,8 @@ export default function Page() {
 				<Row className="align-items-center mt-md-5">
 					<Col md={6} xs={{ span: 12, order: 2 }} className="mt-2">
 						<Col md={12} className="mt-4">
-
 							<DevInfo element={devInfoText} />
-							<DevSubInfo element="This website is made with React.js" />
+							<DevSubInfo element={<p>This website is made with React.js</p>} />
 						</Col>
 
 						<div className="mt-5 justify-content-center d-flex">

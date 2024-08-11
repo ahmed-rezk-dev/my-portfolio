@@ -5,15 +5,15 @@ export const TextContainer = styled.div``
 export const TextCode = styled.h2`
 	color: ${(props) => props.theme.colors.success};
 `
-export const TextCenter = styled.h1`
+export const CenterElement = styled.div`
 	margin-left: 1rem;
 `
 export default function DevInfo({ element }: { element: ReactNode }) {
 	return (
 		<TextContainer>
-			<TextCode>{"<h1>"}</TextCode>
-			<TextCenter>{element}</TextCenter>
-			<TextCode>{"</h1>"}</TextCode>
+			<TextCode>{"<h2>"}</TextCode>
+			<CenterElement>{element}</CenterElement>
+			<TextCode>{"</h2>"}</TextCode>
 		</TextContainer>
 	)
 }
