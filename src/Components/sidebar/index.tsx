@@ -2,7 +2,15 @@ import React from "react"
 
 import styled from "styled-components"
 import { OverlayTrigger, Tooltip } from "react-bootstrap"
-import { HomeIcon, LinkedinIcon, GithubIcon } from "@/public/svg"
+import {
+	HomeIcon,
+	LinkedinIcon,
+	GithubIcon,
+	AboutIcon,
+	PortfolioIcon,
+	SkillsIcon,
+	ContactIcon,
+} from "@/public/svg"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { motion } from "framer-motion"
@@ -113,9 +121,12 @@ export default function Sidebar({ isSidebarOpen }: { isSidebarOpen: boolean }) {
 		},
 	}
 
+	const activeSelectedLink = (link: string) =>
+		`link ${pathname === link ? "selectedLink" : ""}`
+
 	return (
 		<motion.div
-      initial="close"
+			initial="close"
 			animate={isSidebarOpen ? "open" : "close"}
 			variants={sidebarAnimtion}
 		>
@@ -127,11 +138,49 @@ export default function Sidebar({ isSidebarOpen }: { isSidebarOpen: boolean }) {
 							placement="right"
 							overlay={<Tooltip id="tooltip-disabled">Home</Tooltip>}
 						>
-							<Link
-								className={`link ${pathname === "/" ? "selectedLink" : ""}`}
-								href="/"
-							>
+							<Link className={activeSelectedLink("/")} href="/">
 								<HomeIcon />
+							</Link>
+						</OverlayTrigger>
+					</li>
+
+					<li>
+						<OverlayTrigger
+							placement="right"
+							overlay={<Tooltip id="tooltip-disabled">About Me!</Tooltip>}
+						>
+							<Link className={activeSelectedLink("/about")} href="/about">
+								<AboutIcon />
+							</Link>
+						</OverlayTrigger>
+					</li>
+					<li>
+						<OverlayTrigger
+							placement="right"
+							overlay={<Tooltip id="tooltip-disabled">Portfolio</Tooltip>}
+						>
+							<Link className={activeSelectedLink("/portfolio")} href="/portfolio">
+								<PortfolioIcon />
+							</Link>
+						</OverlayTrigger>
+					</li>
+					<li>
+						<OverlayTrigger
+							placement="right"
+							overlay={<Tooltip id="tooltip-disabled">Skills</Tooltip>}
+						>
+							<Link className={activeSelectedLink("/skills")} href="/skills">
+								<SkillsIcon />
+							</Link>
+						</OverlayTrigger>
+					</li>
+					<li>
+						<OverlayTrigger
+							placement="right"
+							overlay={<Tooltip id="tooltip-disabled">Contact Me</Tooltip>}
+						>
+							<Link className={activeSelectedLink("/contact")} href="/contact">
+								<ContactIcon />
 							</Link>
 						</OverlayTrigger>
 					</li>
