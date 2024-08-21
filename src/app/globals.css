@@ -1,2 +1,7 @@
 @import "../public/bootstrap.min.css";
 @import "../public/font.css";
+
+.dark-image {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
